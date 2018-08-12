@@ -1,7 +1,10 @@
 import React from 'react'
+import { HeaderNav } from '../header/HeaderNav'
+import { HeaderSocial } from '../header/HeaderSocial'
 
 export const Header = () => (
-  <div>
-    <h1>Hello Rembrandt</h1>
+  <div className="header-container">
+    <HeaderNav />
+    <HeaderSocial />
   </div>
 )
