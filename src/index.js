@@ -1,10 +1,10 @@
 import React from 'react'
 import '../src/stylesheets/index.scss'
 import { render } from 'react-dom'
-import { Header } from '../src/components/header/Header'
+import { App } from '../src/App.js'
 
 window.React = React
 render(
-  <Header />,
+  <App />,
   document.getElementById('container')
 )

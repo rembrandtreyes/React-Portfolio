@@ -1,6 +1,6 @@
 import React from 'react'
-import { HeaderNav } from '../header/HeaderNav'
-import { HeaderSocial } from '../header/HeaderSocial'
+import { HeaderNav }  from './../components/header/HeaderNav'
+import { HeaderSocial } from './../components/header/HeaderSocial'
 
 export const Header = () => (
   <div className="header-container">
