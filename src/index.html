@@ -2,9 +2,18 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+  	<script>
+  		ScrollReveal({ duration: 1000 })
+  	</script>
   </head>
   <body>
     <div id="container"></div>
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    <script>
+  		ScrollReveal().reveal('.leader', { delay: 500 })
+  		ScrollReveal().reveal('.coder', { delay: 1000 })
+  		ScrollReveal().reveal('.rock-climber', { delay: 1500 })
+	</script>
   </body>
 </html>

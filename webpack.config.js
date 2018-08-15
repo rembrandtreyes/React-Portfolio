@@ -2,7 +2,7 @@ const path = require('path')
 //const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackMd5Hash = require('webpack-md5-hash')
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
@@ -24,9 +24,9 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
+        exclude: /node_modules|dev/,
         use: {
-          loader: "babel-loader"
+          loader: 'babel-loader'
         }
       },
       {
@@ -35,7 +35,7 @@ module.exports = {
       },
       {
         test: /\.(jpg|png)$/,
-        use: ["file-loader"]
+        use: ['file-loader']
       }
     ]
   },
