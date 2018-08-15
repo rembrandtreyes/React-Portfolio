@@ -5,7 +5,7 @@ export const Profile = () => (
     <div id="about" className="profile">
       <img className="profile-pic" src={require('../../../src/images/self-portrait.png')} alt="Rembrandt's self-portrait" />
     </div>
-    <div>
+    <div className="fun-facts">
       <span className="leader">Leader</span>
       <span className="coder">Coder</span>
       <span className="rock-climber">Rock Climber</span>

@@ -4,13 +4,17 @@ body {
   padding: 0;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: auto;
+
+}
+
 .header-container {
   display: grid;
   grid-template-columns: auto;
-  grid-auto-rows: auto;
   grid-template-areas:
     "headerNav headerSocial"
-    "profile profile";
 
 }
 .header-nav {
@@ -80,27 +84,43 @@ body {
   display: grid;
   grid-area: profile;
   height: 100vh;
-  border: 2px solid black;
 
   background: #33C6F8;
 
-
-  h1.bio {
-    height: 10vh;
-    border: 1px solid black;
+  .profile {
+    display: grid;
+    height: 300px;
+    justify-content: center;
+    height: 25vh;
   }
 
   .profile-pic {
     margin-top: 2em;
-    padding-top: 2em;
     border-radius: 50%;
     width: 250px;
-    border: 1px solid black;
+  }
+
+  .fun-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 24px;
+
+    .leader {
+      display: grid;
+      justify-content: right;
+    }
+    .coder {
+      display: grid;
+      justify-content: center;
+    }
+    .rock-climber {
+      display: grid;
+      justify-content: left;
+    }
   }
 
     p.bio {
       width: 50vh;
-      border: 1px solid black;
     }
 }
 
