@@ -22,15 +22,15 @@ class PortfolioSquare extends Component {
 
   render() {
     return (
-      <div>
+      <div className="portfolio-square">
         {this.state.portfolioSquare.map(square => {
-          return ([<div>
-            <p key={square.id}>{square.title}</p>
-            <a key={square.id} href={square.url}>Link</a>
+          return ([
+            <div key={square.id}>
+            <p className="title">{square.title}</p>
+            
+            <a href={square.url}>Link</a>
           </div>
-          ]
-
-          )
+          ])
         })}
       </div>
     )
