@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { FaHtml5 } from 'react-icons/fa'
 
 class PortfolioSquare extends Component {
   constructor(props) {
@@ -7,17 +8,25 @@ class PortfolioSquare extends Component {
     this.state = {
       portfolioSquare: [
         {
-          id: 1,
-          title: 'Landing Page',
-          url: 'https://codepen.io/rembrandtreyes/pen/NBqYvK'
+          id: this.nextId(),
+          title: 'Wiki-Viewer',
+          url: 'https://codepen.io/rembrandtreyes/full/OjpVyw/',
+          preview: require('../../../src/images/wiki-viewer.png'),
+          lang: [{langId: this.nextId(), icon: <FaHtml5 />}]
         },
         {
-          id: 2,
+          id: this.nextId(),
           title: 'Technical Document',
-          url: 'https://codepen.io/rembrandtreyes/pen/aKgrGj'
+          url: 'https://codepen.io/rembrandtreyes/pen/aKgrGj',
+          preview: require('../../../src/images/technical-document.png')
         }
       ]
     }
+  }
+
+  nextId() {
+    this.uniqueId = this.uniqueId || 0
+    return this.uniqueId++
   }
 
   render() {
@@ -27,7 +36,8 @@ class PortfolioSquare extends Component {
           return ([
             <div key={square.id}>
             <p className="title">{square.title}</p>
-            
+            <img className="preview-width" src={square.preview} />
+            <span key={square.lang.langId}>{square.lang.icon}</span>
             <a href={square.url}>Link</a>
           </div>
           ])
