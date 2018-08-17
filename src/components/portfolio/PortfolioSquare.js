@@ -12,13 +12,25 @@ class PortfolioSquare extends Component {
           title: 'Wiki-Viewer',
           url: 'https://codepen.io/rembrandtreyes/full/OjpVyw/',
           preview: require('../../../src/images/wiki-viewer.png'),
-          lang: [{langId: this.nextId(), icon: <FaHtml5 />}]
+          lang: [
+            {
+              langId: this.nextId(),
+              icons: [<FaHtml5 />]
+            }
+          ]
         },
         {
           id: this.nextId(),
           title: 'Technical Document',
           url: 'https://codepen.io/rembrandtreyes/pen/aKgrGj',
-          preview: require('../../../src/images/technical-document.png')
+          preview: require('../../../src/images/technical-document.png'),
+          lang: [
+            {
+              langId: this.nextId(),
+              icons: [<FaHtml5 />]
+            }
+          ]
+
         }
       ]
     }
@@ -37,7 +49,9 @@ class PortfolioSquare extends Component {
             <div key={square.id}>
             <p className="title">{square.title}</p>
             <img className="preview-width" src={square.preview} />
-            <span key={square.lang.langId}>{square.lang.icon}</span>
+            <div key={square.lang[0].langId}>
+              {square.lang[0].icons.map((icon, index) => {return <span key={index}>{icon}</span>})}
+            </div>
             <a href={square.url}>Link</a>
           </div>
           ])
