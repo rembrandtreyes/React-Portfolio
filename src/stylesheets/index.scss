@@ -125,26 +125,60 @@ body {
 }
 
 .portfolio-container {
-  margin-top: -40px;
   height: 100vh;
   background: #7DD2A0;
 }
 
 .portfolio-square {
+  margin: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
   .title {
+    text-align: center;
     font-size: 24px;
     font-weight: bold;
   }
 }
 
-.about-me {
-  margin-top: -40px;
-  height: 50vh;
-  background: #EEF98F;
-
+.portfolio-square > div {
+  display: grid;
+  justify-content: center;
+  text-align: center;
 }
 
-.preview-width {
+.button {
+  background-color: #E07D7D;
+  border-radius: 5px;
+  color: white;
+  padding: .5em;
+  text-decoration: none;
+}
+
+.button:focus, .button:hover {
+  background-color: FireBrick;
+  color: white;
+}
+
+.about {
+  height: 100vh;
+  background: #EEF98F;
+  margin-top: -20px;
+  text-align: center;
+}
+
+.about-me {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.icons {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.preview-tile {
+  border-radius: 5px;
   width: 250px;
-  height: 200px;
+  height: 150px;
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { AboutMe } from './../components/AboutMe'
 
 export const About = () => (
-  <div>
+  <div className="about">
     <AboutMe />
   </div>
 )
