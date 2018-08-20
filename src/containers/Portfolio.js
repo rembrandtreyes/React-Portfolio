@@ -5,8 +5,7 @@ class Portfolio extends Component {
 
   render() {
     return (
-      <div className="portfolio-container">
-        <div id="star"></div>
+      <div id="portfolio" className="portfolio-container">
         <PortfolioSquare />
       </div>
     )

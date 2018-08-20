@@ -163,13 +163,14 @@ body {
 .about {
   height: 100vh;
   background: #EEF98F;
-  margin-top: -20px;
+  /*margin-top: -20px;*/
   text-align: center;
 }
 
 .about-me {
   width: 50%;
   margin: 0 auto;
+  padding-top: 20%;
 }
 
 .icons {
@@ -180,5 +181,5 @@ body {
 .preview-tile {
   border-radius: 5px;
   width: 250px;
-  height: 150px;
+  height: 175px;
 }

@@ -41,9 +41,6 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin('dist', {} ),
-    //new ExtractTextPlugin(
-      //{filename: 'style.[hash].css', disable: false, allChunks: true}
-    //),
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css',
     }),
@@ -53,7 +50,14 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html'
     }),
-    new WebpackMd5Hash()
-    //new SingleEntryPlugin(this.context, template).apply(childCompiler);
+    new WebpackMd5Hash(),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.DedupePlugin(), //dedupe similar code
+    new webpack.optimize.UglifyJsPlugin(), //minify everything
+    new webpack.optimize.AggressiveMergingPlugin()//Merge chunks 
   ]
 }
