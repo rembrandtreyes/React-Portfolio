@@ -4,6 +4,7 @@ const WebpackMd5Hash = require('webpack-md5-hash')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const CompressionPlugin = require('compression-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
   entry: { main: './src/index.js' },
@@ -50,21 +51,6 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html'
     }),
-    new WebpackMd5Hash(),
-    new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify('production')
-      }
-    }),
-    new webpack.optimize.DedupePlugin(), //dedupe similar code
-    new webpack.optimize.UglifyJsPlugin(), //minify everything
-    new webpack.optimize.AggressiveMergingPlugin(), //Merge chunks
-    new CompressionPlugin({ // this is the new code you have to add
-      asset: "[path].gz[query]",
-      algorithm: "gzip",
-      test: /\.js$|\.css$|\.scss$|\.html$/,
-      threshold: 10240,
-      minRatio: 0.8
-    })
+    new WebpackMd5Hash()
   ]
 }

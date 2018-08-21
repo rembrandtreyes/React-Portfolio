@@ -5540,6 +5540,10 @@ wbuf@^1.1.0, wbuf@^1.7.2:
   dependencies:
     minimalistic-assert "^1.0.0"
 
+web-cli@^1.0.0-prealpha:
+  version "1.0.0-prealpha"
+  resolved "https://registry.yarnpkg.com/web-cli/-/web-cli-1.0.0-prealpha.tgz#dba72d289fe85828ca65b1cc1edc17574fe533b4"
+
 webpack-cli@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/webpack-cli/-/webpack-cli-3.1.0.tgz#d71a83687dcfeb758fdceeb0fe042f96bcf62994"

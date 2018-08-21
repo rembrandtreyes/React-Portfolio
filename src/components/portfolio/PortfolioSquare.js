@@ -5,6 +5,7 @@ class PortfolioSquare extends Component {
   constructor(props) {
     super(props)
 
+    // Data for portfolio squares
     this.state = {
       portfolioSquare: [
         {
@@ -83,10 +84,15 @@ class PortfolioSquare extends Component {
     }
   }
 
+  /*
+  Helper function that will automate incrementing the ID for our portfolio
+  square.
+  */
   nextId() {
     this.uniqueId = this.uniqueId || 0
     return this.uniqueId++
   }
+
 
   render() {
     return (

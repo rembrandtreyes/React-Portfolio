@@ -4,12 +4,14 @@ body {
   padding: 0;
 }
 
+/* index.js stylinh */
 .container {
   display: grid;
   grid-template-columns: auto;
 
 }
 
+/* Container for the header component */
 .header-container {
   display: grid;
   grid-template-columns: auto;
@@ -17,6 +19,8 @@ body {
     "headerNav headerSocial"
 
 }
+
+/* Styling for the navigation header */
 .header-nav {
   display: grid;
   grid-area: headerNav;
@@ -51,6 +55,7 @@ body {
   }
 }
 
+/* Styling for the social bar in the header container */
 .header-social {
   display: grid;
   grid-area: headerSocial;
@@ -80,11 +85,11 @@ body {
   }
 }
 
+/* Container style for the profile component */
 .profile-container {
   display: grid;
   grid-area: profile;
   height: 100vh;
-
   background: #33C6F8;
 
   .profile {
@@ -119,9 +124,9 @@ body {
     }
   }
 
-    p.bio {
-      width: 50vh;
-    }
+  p.bio {
+    width: 50vh;
+  }
 }
 
 .portfolio-container {
@@ -163,7 +168,6 @@ body {
 .about {
   height: 100vh;
   background: #EEF98F;
-  /*margin-top: -20px;*/
   text-align: center;
 }
 
@@ -173,11 +177,13 @@ body {
   padding-top: 20%;
 }
 
+/* Sizing for FA icons */
 .icons {
   margin: 10px 0;
   font-size: 24px;
 }
 
+/* Sizing for tile image */
 .preview-tile {
   border-radius: 5px;
   width: 250px;

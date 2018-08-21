@@ -1,10 +1,7 @@
-import { Component } from 'react'
+import React from 'react'
 import { Profile } from './../components/profile/Profile.js'
 
-export class ProfileContainer extends Component {
-  render() {
-    return (
-      <Profile />
-    )
-  }
-}
+// Stateless component for the profile container
+export const ProfileContainer = () => (
+  <Profile />
+)
