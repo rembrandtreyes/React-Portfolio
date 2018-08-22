@@ -190,20 +190,22 @@ body {
   height: 175px;
 }
 
-
-
-.contact-form-container {
-  width: 100%;
+.footer {
   display: grid;
   height: 100vh;
   background-color: #E07D7D;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 100px 1fr 50px;
   grid-template-areas:
-    "h2 h2 cws"
-    "p p cws"
+    "f f cws"
+    "f f cws"
     "f f cws"
     "r r r";
+}
+
+.contact-form-container {
+  width: 100%;
+  grid-area: f;
 }
 .contact-form-container>* {
   background: orange;
@@ -214,7 +216,6 @@ body {
 
 
 .question {
-  grid-area: h2;
   border: 1px solid black;
 }
 
@@ -222,9 +223,38 @@ body {
   grid-area: p;
 }
 
-div.header-social {
+.footer-social {
   grid-area: cws;
+  justify-content: center;
+  align-content: center;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E07D7D;
+  }
+
+  li {
+    align-content: center;
+    float: right;
+  }
+
+  li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      margin: 0;
+      text-decoration: none;
+  }
+
+  li a:hover {
+      background-color: #111;
+  }
 }
+
 .form {
   display: grid;
   grid-area: f;
@@ -232,4 +262,9 @@ div.header-social {
   .field {
     border: none;
   }
+}
+
+.react-bar {
+  grid-area: r;
+
 }
