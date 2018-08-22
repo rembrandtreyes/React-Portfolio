@@ -189,3 +189,47 @@ body {
   width: 250px;
   height: 175px;
 }
+
+
+
+.contact-form-container {
+  width: 100%;
+  display: grid;
+  height: 100vh;
+  background-color: #E07D7D;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 1fr 50px;
+  grid-template-areas:
+    "h2 h2 cws"
+    "p p cws"
+    "f f cws"
+    "r r r";
+}
+.contact-form-container>* {
+  background: orange;
+  outline: solid 1px black;
+  box-sizing: border-box;
+}
+/* Styling for Footer contact form */
+
+
+.question {
+  grid-area: h2;
+  border: 1px solid black;
+}
+
+.contact-form-container > p {
+  grid-area: p;
+}
+
+div.header-social {
+  grid-area: cws;
+}
+.form {
+  display: grid;
+  grid-area: f;
+
+  .field {
+    border: none;
+  }
+}

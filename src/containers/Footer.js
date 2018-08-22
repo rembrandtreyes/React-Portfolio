@@ -1,7 +1,7 @@
 import { ContactForm } from './../components/footer/ContactForm'
 
 export const Footer = () => (
-  <div>
+  <div className="footer">
     <ContactForm />
   </div>
 )
