@@ -6,6 +6,5 @@ export const Footer = () => (
   <div className="footer">
     <ContactForm />
     <FooterSocial />
-    <ReactBar />
   </div>
 )

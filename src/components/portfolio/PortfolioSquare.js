@@ -105,7 +105,7 @@ class PortfolioSquare extends Component {
               <div className="icons" key={square.lang[0].langId}>
                 {square.lang[0].icons.map((icon, index) => {return <span key={index}>{icon}</span>})}
               </div>
-              <a className="button js-button" role="button" target="_blank" href={square.url}>Link</a>
+              <a className="button js-button" role="button" target="_blank" href={square.url}>View</a>
             </div>
           ])
         })}

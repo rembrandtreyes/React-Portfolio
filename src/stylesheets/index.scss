@@ -2,6 +2,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 /* index.js stylinh */
@@ -135,13 +136,15 @@ body {
 }
 
 .portfolio-square {
-  margin: 0 20px;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
 
   .title {
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: bold;
   }
 }
@@ -149,15 +152,19 @@ body {
 .portfolio-square > div {
   display: grid;
   justify-content: center;
+  align-content: center;
   text-align: center;
 }
 
 .button {
+  display: grid;
   background-color: #E07D7D;
   border-radius: 5px;
   color: white;
   padding: .5em;
   text-decoration: none;
+  justify-content: center;
+  width: 50%;
 }
 
 .button:focus, .button:hover {
@@ -180,14 +187,14 @@ body {
 /* Sizing for FA icons */
 .icons {
   margin: 10px 0;
-  font-size: 24px;
+  font-size: 1.75em;
 }
 
 /* Sizing for tile image */
 .preview-tile {
   border-radius: 5px;
-  width: 250px;
-  height: 175px;
+  width: 15rem;
+  height: 25vh;
 }
 
 .footer {
@@ -195,22 +202,17 @@ body {
   height: 100vh;
   background-color: #E07D7D;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px 1fr 50px;
+  grid-template-rows: 1fr 1fr 1fr 50px;
   grid-template-areas:
-    "f f cws"
-    "f f cws"
-    "f f cws"
-    "r r r";
+    ". f ."
+    ". f ."
+    ". f ."
+    ". r cws";
 }
 
 .contact-form-container {
   width: 100%;
   grid-area: f;
-}
-.contact-form-container>* {
-  background: orange;
-  outline: solid 1px black;
-  box-sizing: border-box;
 }
 /* Styling for Footer contact form */
 
@@ -227,6 +229,7 @@ body {
   grid-area: cws;
   justify-content: center;
   align-content: center;
+  border: 1px solid black;
 
   ul {
     list-style-type: none;
@@ -237,6 +240,7 @@ body {
   }
 
   li {
+    display: grid;
     align-content: center;
     float: right;
   }
@@ -265,6 +269,17 @@ body {
 }
 
 .react-bar {
+  display: grid;
   grid-area: r;
+  justify-content: center;
+}
 
+#name, #_replyto {
+  height: 20px;
+  width: 300px;
+}
+
+#message {
+  height: 60px;
+  width: 300px;
 }
