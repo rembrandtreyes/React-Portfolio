@@ -1,160 +1,115 @@
-
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-}
+  font-family: sans-serif; }
 
 /* index.js stylinh */
 .container {
   display: grid;
-  grid-template-columns: auto;
-
-}
+  grid-template-columns: auto; }
 
 /* Container for the header component */
 .header-container {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas:
-    "headerNav headerSocial"
-
-}
+  grid-template-areas: "headerNav headerSocial"; }
 
 /* Styling for the navigation header */
 .header-nav {
   display: grid;
-  grid-area: headerNav;
-
-  ul {
+  grid-area: headerNav; }
+  .header-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-  }
-
-  li {
+    background-color: #333; }
+  .header-nav li {
     float: left;
-    height: 100%;
-  }
-
-  li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-  }
-
-  li a.name {
-    color: #E07D7D;
-  }
-
-  li a:hover {
-      background-color: #111;
-  }
-}
+    height: 100%; }
+  .header-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; }
+  .header-nav li a.name {
+    color: #E07D7D; }
+  .header-nav li a:hover {
+    background-color: #111; }
 
 /* Styling for the social bar in the header container */
 .header-social {
   display: grid;
-  grid-area: headerSocial;
-  ul {
+  grid-area: headerSocial; }
+  .header-social ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-  }
-
-  li {
-    float: right;
-  }
-
-  li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      margin: 0;
-      text-decoration: none;
-  }
-
-  li a:hover {
-      background-color: #111;
-  }
-}
+    background-color: #333; }
+  .header-social li {
+    float: right; }
+  .header-social li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 0;
+    text-decoration: none; }
+  .header-social li a:hover {
+    background-color: #111; }
 
 /* Container style for the profile component */
 .profile-container {
   display: grid;
   grid-area: profile;
   height: 100vh;
-  background: #33C6F8;
-
-  .profile {
+  background: #33C6F8; }
+  .profile-container .profile {
     display: grid;
     height: 300px;
     justify-content: center;
-    height: 25vh;
-  }
-
-  .profile-pic {
+    height: 25vh; }
+  .profile-container .profile-pic {
     margin-top: 2em;
     border-radius: 50%;
-    width: 250px;
-  }
-
-  .fun-facts {
+    width: 250px; }
+  .profile-container .fun-facts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    font-size: 24px;
-
-    .leader {
+    font-size: 24px; }
+    .profile-container .fun-facts .leader {
       display: grid;
-      justify-content: right;
-    }
-    .coder {
+      justify-content: right; }
+    .profile-container .fun-facts .coder {
       display: grid;
-      justify-content: center;
-    }
-    .rock-climber {
+      justify-content: center; }
+    .profile-container .fun-facts .rock-climber {
       display: grid;
-      justify-content: left;
-    }
-  }
-
-  p.bio {
-    width: 50vh;
-  }
-}
+      justify-content: left; }
+  .profile-container p.bio {
+    width: 50vh; }
 
 .portfolio-container {
   height: 100vh;
-  background: #7DD2A0;
-}
+  background: #7DD2A0; }
 
 .portfolio-square {
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  align-content: center;
-
-  .title {
+  align-content: center; }
+  .portfolio-square .title {
     text-align: center;
     font-size: 1.5em;
-    font-weight: bold;
-  }
-}
+    font-weight: bold; }
 
 .portfolio-square > div {
   display: grid;
   justify-content: center;
   align-content: center;
-  text-align: center;
-}
+  text-align: center; }
 
 .button {
   display: grid;
@@ -162,38 +117,32 @@ body {
   border-radius: 5px;
   color: white;
   padding: .5em;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .button:focus, .button:hover {
   background-color: FireBrick;
-  color: white;
-}
+  color: white; }
 
 .about {
   height: 100vh;
   background: #EEF98F;
-  text-align: center;
-}
+  text-align: center; }
 
 .about-me {
   width: 50%;
   margin: 0 auto;
-  padding-top: 20%;
-}
+  padding-top: 20%; }
 
 /* Sizing for FA icons */
 .icons {
   margin: 10px 0;
-  font-size: 1.75em;
-}
+  font-size: 1.75em; }
 
 /* Sizing for tile image */
 .preview-tile {
   border-radius: 5px;
   width: 15rem;
-  height: 25vh;
-}
+  height: 25vh; }
 
 .footer {
   display: grid;
@@ -201,93 +150,71 @@ body {
   background-color: #E07D7D;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 50px;
-  grid-template-areas:
-    ". . ."
-    ". f ."
-    ". f ."
-    ". r cws";
-}
+  grid-template-areas: ". . ." ". f ." ". f ." ". r cws"; }
 
 .contact-form-container {
   width: 100%;
-  grid-area: f;
-}
+  grid-area: f; }
+
 /* Styling for Footer contact form */
-
-
 .question {
   text-align: center;
-  color: white;
-}
+  color: white; }
 
 .contact-form-container > p {
-  grid-area: p;
-}
+  grid-area: p; }
 
 .footer-social {
   grid-area: cws;
   justify-content: center;
-  align-content: center;
-
-  ul {
+  align-content: center; }
+  .footer-social ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #E07D7D;
-  }
-
-  li {
+    background-color: #E07D7D; }
+  .footer-social li {
     display: grid;
     align-content: center;
-    float: right;
-  }
-
-  li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      margin: 0;
-      text-decoration: none;
-  }
-
-  li a:hover {
-      background-color: #111;
-  }
-}
+    float: right; }
+  .footer-social li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 0;
+    text-decoration: none; }
+  .footer-social li a:hover {
+    background-color: #111; }
 
 .form {
   display: grid;
   grid-area: f;
-  width: 100%;
-  .field {
-    border: none;
-  }
-}
+  width: 100%; }
+  .form .field {
+    border: none; }
 
 .button.submit {
   width: 100%;
   background-color: #33C6F8;
   border: none;
-  height: 3em;
-}
+  height: 3em; }
+
 .react-bar {
   display: grid;
   grid-area: r;
-  justify-content: center;
-}
+  justify-content: center; }
 
 #name, #_replyto {
   height: 20px;
   width: 100%;
   border-radius: 5px;
-  border: none;
-}
+  border: none; }
 
 #message {
   height: 60px;
   width: 100%;
   border-radius: 5px;
-  border: none;
-}
+  border: none; }
+
