@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  min-width:1080px;        /* Suppose you want minimum width of 1000px */
+  width: auto !important;  /* Firefox will set width as auto */
+  width:1080px; 
 }
 
 /* index.js stylinh */
@@ -91,7 +94,10 @@ body {
   display: grid;
   grid-area: profile;
   height: 100vh;
-  background: #33C6F8;
+  background-image: url('../../src/images/Background1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   .profile {
     display: grid;
