@@ -1,12 +1,12 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export const HeaderNav = () => (
   <div className="header-nav">
     <ul>
-      <li><a className="name" href="#home">Rembrandt Reyes</a></li>
-      <li><a href="#about-me">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><NavLink to='/about'>About</NavLink></li>
+      <li><NavLink to='/portfolio'>Portfolio</NavLink></li>
+      <li><NavLink to='/contact'>Contact</NavLink></li>
     </ul>
   </div>
 )
