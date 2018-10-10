@@ -1,6 +1,6 @@
+import React from 'react'
 import ContactForm from '../components/footer/ContactForm'
 import FooterSocial from '../components/footer/FooterSocial'
-import { ReactBar } from '../components/footer/ReactBar'
 
 const Footer = () => (
   <div className="footer">

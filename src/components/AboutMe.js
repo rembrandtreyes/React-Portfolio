@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const AboutMe = () => (
+const AboutMe = () => (
   <div id="about-me" className="about-me">
     <h2>PROGRAMMER BY DAY, ROCK CLIMBER BY NIGHT</h2>
     <p>
@@ -19,3 +19,5 @@ export const AboutMe = () => (
     </p>
   </div>
 )
+
+export default AboutMe

@@ -1,9 +1,9 @@
-import { FaLinkedin } from 'react-icons/fa'
-import { FaGithub } from 'react-icons/fa'
-import { FaTwitter } from 'react-icons/fa'
-import { FaWordpress } from 'react-icons/fa'
+import React from 'react'
+import {
+  FaLinkedin, FaGithub, FaTwitter, FaWordpress,
+} from 'react-icons/fa'
 
-export const HeaderSocial = () => (
+const HeaderSocial = () => (
   <div className="header-social">
     <ul>
       <li />
@@ -14,3 +14,5 @@ export const HeaderSocial = () => (
     </ul>
   </div>
 )
+
+export default HeaderSocial

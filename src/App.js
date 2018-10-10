@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
-import { Header } from './containers/Header'
-import { ProfileContainer } from './containers/ProfileContainer'
-import { Portfolio } from './containers/Portfolio'
+import ProfileContainer from './containers/ProfileContainer'
+import Portfolio from './containers/Portfolio'
 import About from './containers/About'
 import Footer from './containers/Footer'
 
 class App extends Component {
+  constructor() {
+    super()
+    this.state = {}
+  }
+
   render() {
     return (
       <BrowserRouter>
