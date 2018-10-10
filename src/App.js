@@ -3,8 +3,8 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import { Header } from './containers/Header'
 import { ProfileContainer } from './containers/ProfileContainer'
 import { Portfolio } from './containers/Portfolio'
-import { About } from './containers/About'
-import { Footer } from './containers/Footer'
+import About from './containers/About'
+import Footer from './containers/Footer'
 
 class App extends Component {
   render() {

@@ -10,7 +10,8 @@ module.exports = {
   entry: { main: './src/index.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[hash].js'
+    filename: '[name].[hash].js',
+    publicPath: '/',
 
   },
   watch: true,
@@ -19,7 +20,8 @@ module.exports = {
     watchContentBase: true,
     inline: true,
     compress: true,
-    port: 3000
+    historyApiFallback: true,
+    port: 3000,
   },
   module: {
     rules: [
@@ -27,21 +29,21 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules|dev/,
         use: {
-          loader: 'babel-loader'
-        }
+          loader: 'babel-loader',
+        },
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
+        use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
       },
       {
         test: /\.(jpg|png)$/,
-        use: ['file-loader']
-      }
-    ]
+        use: ['file-loader'],
+      },
+    ],
   },
   plugins: [
-    new CleanWebpackPlugin('dist', {} ),
+    new CleanWebpackPlugin('dist', {}),
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css',
     }),
@@ -49,8 +51,8 @@ module.exports = {
       inject: false,
       hash: true,
       template: './src/index.html',
-      filename: 'index.html'
+      filename: 'index.html',
     }),
-    new WebpackMd5Hash()
-  ]
+    new WebpackMd5Hash(),
+  ],
 }

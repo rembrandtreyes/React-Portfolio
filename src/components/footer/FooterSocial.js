@@ -3,7 +3,7 @@ import {
   FaLinkedin, FaGithub, FaTwitter, FaWordpress,
 } from 'react-icons/fa'
 
-export const FooterSocial = () => (
+const FooterSocial = () => (
   <div className="footer-social">
     <ul>
       <li><a href="https://rembrandtreyes.wordpress.com/"><FaWordpress /></a></li>

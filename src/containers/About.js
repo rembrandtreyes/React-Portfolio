@@ -1,8 +1,9 @@
 import React from 'react'
 import { AboutMe } from '../components/AboutMe'
 
-export const About = () => (
+const About = () => (
   <div id="about" className="about">
     <AboutMe />
   </div>
 )
+export default About

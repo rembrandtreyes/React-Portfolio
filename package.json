@@ -7,7 +7,7 @@
     "start": "./node_modules/.bin/webpack-dev-server --mode development",
     "build": "webpack",
     "dev": "webpack --mode development",
-    "lint": "eslint src"
+    "lint": "./node_modules/.bin/eslint ./src"
   },
   "author": "Rembrandt Reyes",
   "license": "MIT",
@@ -15,6 +15,7 @@
     "autoprefixer": "^9.1.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
