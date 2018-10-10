@@ -6,7 +6,7 @@ import { FaWordpress } from 'react-icons/fa'
 export const HeaderSocial = () => (
   <div className="header-social">
     <ul>
-      <li></li>
+      <li />
       <li><a href="https://rembrandtreyes.wordpress.com/"><FaWordpress /></a></li>
       <li><a href="https://twitter.com/rembrandt_reyes"><FaTwitter /></a></li>
       <li><a href="https://github.com/rembrandtreyes"><FaGithub /></a></li>

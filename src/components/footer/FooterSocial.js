@@ -1,8 +1,7 @@
 import React from 'react'
-import { FaLinkedin } from 'react-icons/fa'
-import { FaGithub } from 'react-icons/fa'
-import { FaTwitter } from 'react-icons/fa'
-import { FaWordpress } from 'react-icons/fa'
+import {
+  FaLinkedin, FaGithub, FaTwitter, FaWordpress,
+} from 'react-icons/fa'
 
 export const FooterSocial = () => (
   <div className="footer-social">
@@ -14,3 +13,5 @@ export const FooterSocial = () => (
     </ul>
   </div>
 )
+
+export default FooterSocial

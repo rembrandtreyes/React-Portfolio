@@ -16,9 +16,9 @@ class PortfolioSquare extends Component {
           lang: [
             {
               langId: this.nextId(),
-              icons: [<FaHtml5 />, <FaCss3 />, <FaJsSquare />]
-            }
-          ]
+              icons: [<FaHtml5 />, <FaCss3 />, <FaJsSquare />],
+            },
+          ],
         },
         {
           id: this.nextId(),
@@ -28,9 +28,9 @@ class PortfolioSquare extends Component {
           lang: [
             {
               langId: this.nextId(),
-              icons: [<FaHtml5 />, <FaCss3 />, <FaJsSquare />]
-            }
-          ]
+              icons: [<FaHtml5 />, <FaCss3 />, <FaJsSquare />],
+            },
+          ],
         },
         {
           id: this.nextId(),
@@ -40,9 +40,9 @@ class PortfolioSquare extends Component {
           lang: [
             {
               langId: this.nextId(),
-              icons: [<FaHtml5 />, <FaCss3 />, <FaJsSquare />]
-            }
-          ]
+              icons: [<FaHtml5 />, <FaCss3 />, <FaJsSquare />],
+            },
+          ],
         },
         {
           id: this.nextId(),
@@ -52,9 +52,9 @@ class PortfolioSquare extends Component {
           lang: [
             {
               langId: this.nextId(),
-              icons: [<FaHtml5 />, <FaCss3 />]
-            }
-          ]
+              icons: [<FaHtml5 />, <FaCss3 />],
+            },
+          ],
         },
         {
           id: this.nextId(),
@@ -64,9 +64,9 @@ class PortfolioSquare extends Component {
           lang: [
             {
               langId: this.nextId(),
-              icons: [<FaHtml5 />, <FaCss3 />]
-            }
-          ]
+              icons: [<FaHtml5 />, <FaCss3 />],
+            },
+          ],
         },
         {
           id: this.nextId(),
@@ -76,11 +76,11 @@ class PortfolioSquare extends Component {
           lang: [
             {
               langId: this.nextId(),
-              icons: [<FaHtml5 />, <FaCss3 />]
-            }
-          ]
-        }
-      ]
+              icons: [<FaHtml5 />, <FaCss3 />],
+            },
+          ],
+        },
+      ],
     }
   }
 
@@ -97,18 +97,16 @@ class PortfolioSquare extends Component {
   render() {
     return (
       <div className="portfolio-square">
-        {this.state.portfolioSquare.map(square => {
-          return ([
-            <div key={square.id}>
-              <p className="title">{square.title}</p>
-              <img className="preview-tile" src={square.preview} />
-              <div className="icons" key={square.lang[0].langId}>
-                {square.lang[0].icons.map((icon, index) => {return <span key={index}>{icon}</span>})}
-              </div>
-              <a className="button js-button" role="button" target="_blank" href={square.url}>View</a>
+        {this.state.portfolioSquare.map(square => ([
+          <div key={square.id}>
+            <p className="title">{square.title}</p>
+            <img className="preview-tile" src={square.preview} />
+            <div className="icons" key={square.lang[0].langId}>
+              {square.lang[0].icons.map((icon, index) => <span key={index}>{icon}</span>)}
             </div>
-          ])
-        })}
+            <a className="button js-button" role="button" target="_blank" href={square.url}>View</a>
+          </div>,
+        ]))}
       </div>
     )
   }

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import { Header } from './containers/Header'
 import { ProfileContainer } from './containers/ProfileContainer'
-import { Portfolio }  from './containers/Portfolio'
+import { Portfolio } from './containers/Portfolio'
 import { About } from './containers/About'
 import { Footer } from './containers/Footer'
 
@@ -12,26 +12,24 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Route
-            path='/'
+            path="/"
             component={ProfileContainer}
             exact
           />
           <Route
-            path='/about'
+            path="/about"
             component={About}
           />
           <Route
-            path='/portfolio'
+            path="/portfolio"
             component={Portfolio}
           />
           <Route
-            path='/contact'
+            path="/contact"
             component={Footer}
           />
         </div>
       </BrowserRouter>
-
-
     )
   }
 }

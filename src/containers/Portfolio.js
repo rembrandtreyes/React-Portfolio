@@ -1,5 +1,5 @@
 import React from 'react'
-import PortfolioSquare from '../../src/components/portfolio/PortfolioSquare.js'
+import PortfolioSquare from '../components/portfolio/PortfolioSquare.js'
 
 // Stateless portfolio component
 export const Portfolio = () => (
