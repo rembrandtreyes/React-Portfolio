@@ -4,7 +4,7 @@ import {
 } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
 
-const HeaderSocial = () => (
+const NavSocial = () => (
   <div className="header-social">
     <ul>
       <li><NavLink to="https://rembrandtreyes.wordpress.com/"><FaWordpress /></NavLink></li>
@@ -15,4 +15,4 @@ const HeaderSocial = () => (
   </div>
 )
 
-export default HeaderSocial
+export default NavSocial

@@ -107,7 +107,7 @@ class PortfolioSquare extends Component {
     const { portfolioSquare } = this.state
     return (
       <div className="portfolio-square">
-        {portfolioSquare.map(square => ([
+        {portfolioSquare.map(square => (
           <div key={square.id}>
             <p className="title">{square.title}</p>
             <img className="preview-tile" alt="thumbnail preview" src={square.preview} />
@@ -115,8 +115,8 @@ class PortfolioSquare extends Component {
               {square.lang[0].icons.map(icon => <span key={this.nextId}>{icon}</span>)}
             </div>
             <a className="button js-button" role="button" rel="noopener noreferrer" target="_blank" href={square.url}>View</a>
-          </div>,
-        ]))}
+          </div>
+        ))}
       </div>
     )
   }

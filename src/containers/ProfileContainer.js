@@ -1,12 +1,16 @@
 import React from 'react'
-import Header from './Header'
+import NavPages from '../components/nav-bar/NavPages'
+import NavSocial from '../components/nav-bar/NavSocial'
 
 const logo = require('../../src/images/Logo@2x.png')
 // Stateless component for the profile container
 const ProfileContainer = () => (
   <div className="contains">
-    <Header className="test" />
-    <img className="pix" src={logo} alt="Rembrandt's self-portrait" />
+    <div className="header-container">
+      <NavPages className="header-nav" />
+      <NavSocial />
+    </div>
+    <img className="logo" src={logo} alt="Rembrandt's Logo" />
   </div>
 )
 

@@ -29,7 +29,7 @@ body {
 
 }
 
-.pix {
+.logo {
   z-index: 3;
   position: absolute;
   top: 28%;
@@ -160,7 +160,7 @@ body {
 
   .title {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: bold;
   }
 }
@@ -216,12 +216,12 @@ body {
   height: 100vh;
   background-color: #E07D7D;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 50px;
+  grid-template-rows: 60px 100px 1fr 50px;
   grid-template-areas:
+    "h h h"
     ". . ."
     ". f ."
-    ". f ."
-    ". r cws";
+    "cws cws cws";
 }
 
 .contact-form-container {
@@ -230,6 +230,10 @@ body {
 }
 /* Styling for Footer contact form */
 
+.contact-bar {
+  grid-area: h;
+  @extend .header-nav
+}
 
 .question {
   text-align: center;
