@@ -115,15 +115,18 @@ body {
   }
 }
 
-/* Container style for the profile component */
-.profile-container {
-  display: grid;
-  grid-area: profile;
+.contains {
   height: 100vh;
   background-image: url('../../src/images/Background1.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+/* Container style for the profile component */
+.profile-container {
+  display: grid;
+  grid-area: profile;
+
 
   .profile {
     display: grid;
@@ -136,25 +139,6 @@ body {
     margin-top: 2em;
     border-radius: 50%;
     width: 250px;
-  }
-
-  .fun-facts {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    font-size: 24px;
-
-    .leader {
-      display: grid;
-      justify-content: right;
-    }
-    .coder {
-      display: grid;
-      justify-content: center;
-    }
-    .rock-climber {
-      display: grid;
-      justify-content: left;
-    }
   }
 
   p.bio {

@@ -1,6 +1,6 @@
 import React from 'react'
-import ContactForm from '../components/footer/ContactForm'
-import FooterSocial from '../components/footer/FooterSocial'
+import ContactForm from '../components/contact-page/ContactForm'
+import FooterSocial from '../components/contact-page/NavSocial'
 
 const Footer = () => (
   <div className="footer">
