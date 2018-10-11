@@ -1,10 +1,10 @@
 import React from 'react'
-import '../src/stylesheets/index.scss'
+import './stylesheets/index.scss'
 import { render } from 'react-dom'
-import { App } from '../src/App.js'
+import App from './App'
 
 window.React = React
 render(
   <App />,
-  document.getElementById('container')
+  document.getElementById('container'),
 )
