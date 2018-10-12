@@ -19,7 +19,9 @@ const navArr = [
 
 const NavPages = ({ className }) => (
   <div className={className}>
-    {(window.location.href === 'http://localhost:3000/')
+    {(window.location.href === 'http://localhost:3000/'
+      || window.location.href === 'http://www.rembrandtreyes.com'
+    || window.location.href === 'http://www.rembrandtreyes.com/')
       ? navArr[0]
       : navArr[1]}
   </div>

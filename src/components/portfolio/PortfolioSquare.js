@@ -3,12 +3,12 @@ import {
   FaHtml5, FaCss3, FaJsSquare,
 } from 'react-icons/fa'
 
-const twitchViewer = require('../../../src/images/twitch-viewer.png')
-const wikiViewer = require('../../../src/images/wiki-viewer.png')
-const localWeather = require('../../../src/images/local-weather.png')
-const technicalDocument = require('../../../src/images/technical-document.png')
-const tributePage = require('../../../src/images/tribute-page.png')
-const surveyForm = require('../../../src/images/survey-form.png')
+const twitchViewer = require('../../../src/images/twitch-viewer@2x.png')
+const markdownPreviewer = require('../../../src/images/markdown-previewer@2x.png')
+const wikiViewer = require('../../../src/images/wiki-viewer@2x.png')
+const localWeather = require('../../../src/images/local-weather@2x.png')
+const randomQuotes = require('../../../src/images/random-quote@2x.png')
+const technicalDocument = require('../../../src/images/technical-document@2x.png')
 
 class PortfolioSquare extends Component {
   constructor(props) {
@@ -17,6 +17,18 @@ class PortfolioSquare extends Component {
     // Data for portfolio squares
     this.state = {
       portfolioSquare: [
+        {
+          id: this.nextId(),
+          title: 'Markdown Previewer',
+          url: 'http://www.markdownpreviewer.com.s3-website.us-east-2.amazonaws.com/',
+          preview: markdownPreviewer,
+          lang: [
+            {
+              langId: this.nextId(),
+              icons: [<FaHtml5 />, <FaCss3 />, <FaJsSquare />],
+            },
+          ],
+        },
         {
           id: this.nextId(),
           title: 'Twitch Viewer',
@@ -55,33 +67,21 @@ class PortfolioSquare extends Component {
         },
         {
           id: this.nextId(),
+          title: 'Random Quotes',
+          url: 'https://codepen.io/rembrandtreyes/full/vzrzVp/',
+          preview: randomQuotes,
+          lang: [
+            {
+              langId: this.nextId(),
+              icons: [<FaHtml5 />, <FaCss3 />, <FaJsSquare />],
+            },
+          ],
+        },
+        {
+          id: this.nextId(),
           title: 'Technical Document',
           url: 'https://codepen.io/rembrandtreyes/full/aKgrGj/',
           preview: technicalDocument,
-          lang: [
-            {
-              langId: this.nextId(),
-              icons: [<FaHtml5 />, <FaCss3 />],
-            },
-          ],
-        },
-        {
-          id: this.nextId(),
-          title: 'Tribute Page',
-          url: 'https://codepen.io/rembrandtreyes/full/VdOvWp/',
-          preview: tributePage,
-          lang: [
-            {
-              langId: this.nextId(),
-              icons: [<FaHtml5 />, <FaCss3 />],
-            },
-          ],
-        },
-        {
-          id: this.nextId(),
-          title: 'Survey Form',
-          url: 'https://codepen.io/rembrandtreyes/full/QxRyXG/',
-          preview: surveyForm,
           lang: [
             {
               langId: this.nextId(),

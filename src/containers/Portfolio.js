@@ -6,7 +6,6 @@ import NavPages from '../components/nav-bar/NavPages'
 const Portfolio = () => (
   <div id="portfolio" className="portfolio-container">
     <NavPages className="header-nav" />
-    {/* <NavSocial /> */}
     <PortfolioSquare />
   </div>
 )
